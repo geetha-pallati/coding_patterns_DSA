@@ -21,13 +21,13 @@
     ✅ Check palindrome in linked list
 
 # Basic Template (Linked List)
-slow = head;
-fast = head;
+    slow = head;
+    fast = head;
 
-while (fast != NULL && fast->next != NULL) {
-    slow = slow->next;           // 1 step
-    fast = fast->next->next;     // 2 steps
-}
+    while (fast != NULL && fast->next != NULL) {
+        slow = slow->next;           // 1 step
+        fast = fast->next->next;     // 2 steps
+    }
 # i.Find Middle of Linked List
 
 Logic
