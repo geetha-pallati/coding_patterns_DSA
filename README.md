@@ -10,7 +10,8 @@
 
     Fast pointer → moves 2 steps at a time
     
-# They help detect cycles, middle elements, and loop entry points efficiently in O(n) time and O(1) space.When to Use This Pattern?
+# They help detect cycles, middle elements, and loop entry points efficiently in O(n) time and O(1) space.
+# When to Use This Pattern?
 
 ✅ Detect cycle in linked list
 ✅ Find middle of linked list
@@ -139,5 +140,6 @@ int findDuplicate(int* nums, int size) {
     }
     return slow;
 }
-# Fast–Slow Pointer pattern uses two pointers moving at different speeds to detect cycles, find midpoints, or locate repeated elements efficiently.
-====================================================================================================================
+
+Fast–Slow Pointer pattern uses two pointers moving at different speeds to detect cycles, find midpoints, or locate repeated elements efficiently.
+==================================================================================================================
