@@ -13,12 +13,12 @@
 # They help detect cycles, middle elements, and loop entry points efficiently in O(n) time and O(1) space.
 # When to Use This Pattern?
 
-✅ Detect cycle in linked list
-✅ Find middle of linked list
-✅ Find start of cycle
-✅ Happy Number problem
-✅ Find duplicate number in array
-✅ Check palindrome in linked list
+    ✅ Detect cycle in linked list  
+    ✅ Find middle of linked list
+    ✅ Find start of cycle
+    ✅ Happy Number problem
+    ✅ Find duplicate number in array
+    ✅ Check palindrome in linked list
 
 # Basic Template (Linked List)
 slow = head;
@@ -29,9 +29,9 @@ while (fast != NULL && fast->next != NULL) {
     fast = fast->next->next;     // 2 steps
 }
 # i.Find Middle of Linked List
-Logic
 
-When fast reaches end, slow is at middle
+Logic
+    When fast reaches end, slow is at middle
 
 struct Node* findMiddle(struct Node* head) {
     struct Node *slow = head, *fast = head;
@@ -64,7 +64,7 @@ int hasCycle(struct Node* head) {
 
 Logic
 
-    1. Detect cycle
+    1.Detect cycle
     2.Move one pointer to head
     3.Move both 1 step
     4.Meeting point = cycle start
@@ -94,7 +94,6 @@ struct Node* detectCycleStart(struct Node* head) {
 
 # iv. Happy Number (Array / Math Example)
 Logic
-
     Convert number → sum of squares of digits
     Cycle → not happy
 
@@ -119,6 +118,7 @@ int isHappy(int n) {
     return slow == 1;
 }
 # v. Find Duplicate Number (Array)
+
 Logic
     Numbers: 1..n
     Size: n+1
